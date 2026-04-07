@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from "react"; 
 
 function App() {
   const [userId, setUserId] = useState("");
 
   const registerUser = async () => {
     try {
-      const res = await fetch("https://goldpay-backend.onrender.com", {
+      const res = await fetch("https://goldpay-backend.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
